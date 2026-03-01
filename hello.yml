@@ -1,0 +1,15 @@
+name: shreyas
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Everyone Hope you're all doing good !
+        run: echo "Hello Dosto"
+
+      - name: say hello to username
+        run: echo "Hello $USER"
